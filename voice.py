@@ -12,14 +12,11 @@ def audio_detection():
 	return audio
 
 def audio_recognition():
-	try:
-		text = rec.recognize_google(audio_detection())
-	except:
-		text = None
+	text = None
 	while (text is None):
-		try: 
+		try:
 			text = rec.recognize_google(audio_detection())
-		except: 
+		except:
 			text = None
 	return text
 
