@@ -16,7 +16,7 @@ def audio_recognition():
 	while (text is None):
 		try:
 			text = rec.recognize_google(audio_detection())
-		except:
+		except speech.UnknownValueError:
 			text = None
 	return text
 

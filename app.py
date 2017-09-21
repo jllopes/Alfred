@@ -21,7 +21,7 @@ def get_requests():
 			search_text = full_text[1]
 			search.wikipedia_search(search_text)
 		request = voice.audio_recognition()
-		print(request)
+		#print(request)
 
 if __name__ == '__main__':
 	get_requests()
