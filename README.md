@@ -21,3 +21,4 @@ Installing Wikipedia
 ```
 pip install wikipedia
 ```
+.
