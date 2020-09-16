@@ -32,8 +32,6 @@ def get_requests():
 		if request.lower() in time_keywords:
 			say_time()
 		request = voice.audio_recognition()
-		#print(request)
 
 if __name__ == '__main__':
-	#say_time()
 	get_requests()
